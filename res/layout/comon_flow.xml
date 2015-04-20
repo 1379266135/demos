@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="102dp"
+    android:layout_height="24dp"
+    android:background="@drawable/comon_flow_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/comon_flow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/comon_flow_g" />
+
+    <ImageView
+        android:id="@+id/comon_flow_line"
+        android:layout_width="2dip"
+        android:layout_height="16dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/comon_flow_icon"
+        android:src="@drawable/comon_flow_line" />
+
+    <TextView
+        android:id="@+id/comon_flow_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/comon_flow_line"
+        android:paddingLeft="10dip"
+        android:text="0KB/s"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.niu.demos.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <Button
+            android:id="@+id/select_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动图库" />
+
+        <Button
+            android:layout_below="@id/select_pic"
+            android:id="@+id/notification_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送通知" />
+
+        <Button
+            android:id="@+id/noti_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_layout"
+            android:text="启动监听" />
+
+        <Button
+            android:id="@+id/web_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noti_layout"
+            android:text="启动web" />
+
+        <Button
+            android:id="@+id/database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/web_layout"
+            android:text="database" />
+
+        <Button
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/database"
+            android:text="viewpager" />
+
+        <Button
+            android:id="@+id/shader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pager"
+            android:text="渲染" />
+
+        <Button
+            android:id="@+id/setting_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shader"
+            android:text="WIFI_Settings" />
+
+        <Button
+            android:id="@+id/start_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_wifi"
+            android:text="打开WIFI" />
+
+        <Button
+            android:id="@+id/start_observer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_wifi"
+            android:text="打开文件监听" />
+
+        <Button
+            android:id="@+id/start_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_observer"
+            android:text="启动列表" />
+
+        <Button
+            android:id="@+id/start_floating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_list"
+            android:text="启动悬浮窗" />
+
+        <Button
+            android:id="@+id/pull_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_floating"
+            android:text="启动google pull or refresh" />
+
+        <Button
+            android:id="@+id/start_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pull_refresh"
+            android:text="打开webview" />
+
+        <Button
+            android:id="@+id/btn_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_web"
+            android:text="点击我" />
+
+        <com.niu.demos.MyScrollView
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_scroll"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="多人聊天" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="多人通话" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="共享照片" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:gravity="center"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="扫一扫" />
+            </LinearLayout>
+        </com.niu.demos.MyScrollView>
+    </RelativeLayout>
+
+</ScrollView>

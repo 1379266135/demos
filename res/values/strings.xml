@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">demos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_content">这里是git测试</string>
+    <string name="mode_str">拦截模式</string>
+    <string name="free_wifi">免费WiFi</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <!-- Suffix added to a number to signify size in bytes. -->
+    <string name="byteShort">B/S</string>
+    <!-- Suffix added to a number to signify size in kilobytes. -->
+    <string name="kilobyteShort">K/S</string>
+    <!-- Suffix added to a number to signify size in megabytes. -->
+    <string name="megabyteShort">M/S</string>
+    <!-- Suffix added to a number to signify size in gigabytes. -->
+    <string name="gigabyteShort">G/S</string>
+    <!-- Suffix added to a number to signify size in terabytes. -->
+    <string name="terabyteShort">T/S</string>
+    <!-- Suffix added to a number to signify size in petabytes. -->
+    <string name="petabyteShort">P/S</string>
+    <string name="fileSizeSuffix">%1$s%2$s</string>
+
+    <string-array name="titles">
+        <item>Categories</item>
+        <item>Home</item>
+        <item>Top Paid</item>
+        <item>Top Free</item>
+        <item>Top Grossing</item>
+        <item>Top New Paid</item>
+        <item>Top New Free</item>
+        <item>Trending</item>
+    </string-array>
+
+</resources>

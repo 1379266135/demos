@@ -1,0 +1,71 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="document_style">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:colorControlHighlight">#0000AA</item>
+        <item name="android:colorAccent">#00FF00</item>
+        -->
+    </style>
+
+    <!-- 自定义对话框样式 -->
+    <style name="comon_custom_dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 屏幕背景变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 动画 -->
+
+    </style>
+
+    <!-- List的样式 -->
+    <style name="comon_list_custom">
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">@drawable/comon_list_selector</item>
+        <item name="android:divider">@drawable/comon_list_line</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:footerDividersEnabled">true</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="design_text_color">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="design_text_size_12" parent="@style/design_text_color">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="design_text_size_14" parent="@style/design_text_color">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="design_text_size_16" parent="@style/design_text_color">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="design_text_size_20" parent="@style/design_text_color">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

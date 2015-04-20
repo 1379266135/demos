@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="模式" >
+        <Preference android:title="@string/mode_str">
+            <intent 
+                android:targetClass="com.niu.demos.TempActivity"
+                android:targetPackage="com.niu.demos"
+                />
+        </Preference>
+
+        <CheckBoxPreference
+            android:key="intercept_sms"
+            android:layout="@layout/test"
+            android:summaryOff="已关闭"
+            android:summaryOn="已开启"
+            android:title="骚扰拦截"
+            android:widgetLayout="@layout/my_check" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.niu.demos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_STATUS_BAR" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".DemosApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DemosActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GooglePullRefresh"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PreferenceFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DemoWebviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TempActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".adapter.SimpleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".float_window.DocumentClassificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/document_style" >
+        </activity>
+        <activity
+            android:name=".weight.ViewgroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".fileobserver.SDcardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wifi.WifiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wifi.SettingWifiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.niu.demos.shader.ProgressPieActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.niu.demos.sliding.PagerSildingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.niu.demos.database.SQLDemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.niu.demos.web.WebviewActivity"
+            android:screenOrientation="portrait" />
+
+        <!--
+             <receiver android:name=".wifi.testwifi.WifiChangeBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.net.wifi.RSSI_CHANGED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <service android:name=".DemoService" >
+        </service>
+        <service android:name=".float_window.FloatingWindowService" >
+        </service>
+        <service
+            android:name="com.niu.demos.notify.NotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.niu.demos.notify.MyAccesstService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibilityservice" />
+        </service>
+
+        <activity
+            android:name="com.niu.demos.notify.NotificationFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.niu.demos.notify.NotificationViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.niu.demos.notify.SendNotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <!--
+             <receiver android:name=".float_window.NetworkReceiver">
+            <intent-filter >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        -->
+    </application>
+
+</manifest>
